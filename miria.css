@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #000045, #1a1a80);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Contatos Salvos */
+#contatos ul {
+    gap: 60px;
+    /* Espaçamento entre os cards */
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    /* Centraliza as colunas no contêiner */
+}
+
+#contatos ul li {
+    width: 100%;
+    /* Ocupa 50% do contêiner menos o espaço do gap */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #aaaaaa;
+    margin-top: 15px;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contatos ul li .nomeTel {
+    width: 50%;
+    padding: 10px;
+}
+
+#contatos ul li .nome {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#contatos ul li .telefone {
+    font-size: 15px;
+    color: #ff6600;
+}
+
+#contatos ul li .cursoVen {
+    width: 50%;
+}
+
+#contatos ul li:hover {
+    transform: translateY(-5px);
+    /* Efeito de elevação ao passar o mouse */
+}
+
+#contatos ul li .curso {
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    font-weight: 700;
+    text-align: center;
+}
+
+#contatos ul li .vendedora {
+    font-size: 14px;
+    color: #000000;
+    margin-top: auto;
+    /* Empurra para baixo */
+    align-self: flex-end;
+    /* Posiciona à esquerda */
+    width: 100%;
+}
+
+/* Estilização dos Botões */
+.btn-whatsapp, .btn-delete {
+   border: none;
+   background-color: transparent;
+
+    img{
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+
+
+/* Ajustes responsivos para telas menores */
+@media (max-width: 768px) {
+    #contatos ul li {
+        width: 100%;
+        /* Em telas pequenas, ocupa a largura total */
+    }
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo {
+    background-color: #f0f8ff;
+    box-shadow: 2px 2px 2px #b3b3b3;
+    border-radius: 20px 0 0 20px;
+}
+
+.cadastroNome{
+    font-size: 30px;
+    margin: auto;
+    background-color: #ff6600;
+    text-align: center;
+    border-radius: 20px;
+    color: #f0f8ff;
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    header img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    /* Contatos */
+    #contatos ul {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .nome {
+        font-size: 16px;
+    }
+
+    .telefone {
+        font-size: 14px;
+    }
+
+    .curso {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .vendedora {
+        font-size: 12px;
+    }
+
+    /* Modal */
+    .modal-content {
+        margin: 15% auto;
+        width: 95%;
+    }
+
+    /* Botão */
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+.butoes{
+    padding: 10px;
+}

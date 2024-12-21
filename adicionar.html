@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Login</title>
+    <link rel="stylesheet" href="adicionar.css">
+    <link rel="icon" href="imagens/fanexlogo.png" type="icon">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Login</h1>
+    </header>
+
+    <main>
+        <div class="cadastroNome">
+            <h2>Preencha os dados abaixo</h2>
+        </div>
+
+        <form id="formCadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+
+        <div id="status"></div>
+    </main>
+
+    <script src="adicionar.js"></script>
+</body>
+</html>

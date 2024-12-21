@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contatos</title>
+    <link rel="icon" href="imagens/fanexlogo.png" type="icon">
+    <link rel="stylesheet" href="principal.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="imagens/logoBranca.png" alt="Logo da Fanex">
+        <h1>Gerenciador de Contatos</h1>
+    </header>
+    <main>
+        <!-- Formulário -->
+        <form id="form-contato">
+            <h1>Cadastre o contato</h1>
+            <hr>
+            <input type="text" id="nome" placeholder="Nome" required><br>
+            <input type="tel" id="telefone" placeholder="Telefone" required><br>
+            <label for="curso">Curso:</label>
+            <select id="curso" required>
+                <option value="">Selecione um curso</option>
+                <option value="Eletrotécnica">Eletrotécnica</option>
+                <option value="Enfermagem">Enfermagem</option>
+                <option value="Segurança do Trabalho">Segurança do Trabalho</option>
+                <option value="Administração">Administração</option>
+                <option value="Mecânica">Mecânica</option>
+            </select><br>
+            <label for="vendedora">Vendedora:</label>
+            <select id="vendedora" required>
+                <option value="">Selecione a vendedora</option>
+                <option value="Miria">Miria</option>
+                <option value="Mariane">Mariane</option>
+            </select><br>
+            <button type="submit">Salvar</button>
+        </form>
+
+        <section id="contatos">
+            <h2 class="cadastroNome">Ultimo contato Salvo</h2>
+            <ul id="lista-contatos"></ul>
+        </section>
+    </main>
+    <script src="principal.js"></script>
+</body>
+</html>
