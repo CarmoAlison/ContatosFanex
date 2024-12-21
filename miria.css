@@ -41,20 +41,23 @@ main {
     max-width: 900px;
     margin: 0 auto;
 }
+.vendBut{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Contatos Salvos */
 #contatos ul {
-    gap: 60px;
-    /* Espaçamento entre os cards */
+    gap: 20px;
     padding: 0;
     list-style-type: none;
     justify-content: center;
-    /* Centraliza as colunas no contêiner */
 }
 
 #contatos ul li {
     width: 100%;
-    /* Ocupa 50% do contêiner menos o espaço do gap */
     border-radius: 20px;
     box-shadow: 0 4px 8px #aaaaaa;
     margin-top: 15px;
@@ -103,11 +106,8 @@ main {
 #contatos ul li .vendedora {
     font-size: 14px;
     color: #000000;
-    margin-top: auto;
-    /* Empurra para baixo */
-    align-self: flex-end;
-    /* Posiciona à esquerda */
     width: 100%;
+    text-align: center;
 }
 
 /* Estilização dos Botões */
@@ -194,8 +194,19 @@ main {
         font-size: 14px;
         padding: 8px 15px;
     }
+    .vendBut{
+        display: block;
+        margin: auto;
+    }
+    main{
+        padding: 0;
+    }
+    .butoes{
+       justify-content: center;
+    }
 }
 
 .butoes{
     padding: 10px;
+    display: flex;
 }

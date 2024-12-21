@@ -9,6 +9,7 @@
     font-style: normal;
 }
 
+
 /* Estilo Geral */
 body {
     font-family: Arial, sans-serif;
@@ -266,5 +267,11 @@ main {
     .btn {
         font-size: 14px;
         padding: 8px 15px;
+    }
+    #nomeNome{
+        font-size: 20px;
+    }
+    #cursoCurso{
+        font-size: 15px;
     }
 }

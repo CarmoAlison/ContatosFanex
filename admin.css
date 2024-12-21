@@ -253,6 +253,7 @@ main {
     color: #f0f8ff;
 }
 
+
 @media (max-width: 768px) {
     /* Header */
 
@@ -260,6 +261,11 @@ main {
     header img {
         width: 150px;
         margin-bottom: 10px;
+    }
+
+    #fontes a{
+        padding: 5px;
+        font-size: 12px;
     }
 
     header h1 {
@@ -288,6 +294,10 @@ main {
         padding: 5px;
     }
 
+    #cursoCurso{
+        font-size: 15px;
+    }
+
     .vendedora {
         font-size: 12px;
     }
@@ -303,6 +313,19 @@ main {
         font-size: 14px;
         padding: 8px 15px;
     }
+    #nomeNome{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .btn-whatsapp, .btn-delete {
+        border: none;
+        background-color: transparent;
+     
+         img{
+             width: 20px;
+             cursor: pointer;
+         }
+     }
 }
 
 /* Estilização dos Botões */
@@ -317,54 +340,5 @@ main {
  }
 
 
- @media (max-width: 768px) {
-    /* Header */
-    header img {
-        width: 150px;
-        margin-bottom: 10px;
-    }
-    header h1 {
-        display: none;
-    }
-
-    /* Contatos */
-    #contatos ul {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .logo img {
-        width: 80px;
-    }
-
-    .nome {
-        font-size: 16px;
-    }
-
-    .telefone {
-        font-size: 14px;
-    }
-
-    .curso {
-        font-size: 12px;
-        padding: 5px;
-    }
-
-    .vendedora {
-        font-size: 12px;
-    }
-
-    /* Modal */
-    .modal-content {
-        margin: 15% auto;
-        width: 95%;
-    }
-
-    /* Botão */
-    .btn {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-    
-}
 
  

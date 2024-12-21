@@ -29,18 +29,17 @@ function renderContact(contact) {
     li.innerHTML = `
         <div class="logo"><img src="${LogoBranca}" alt="" /></div>
         <div class="nomeTel">
-            <div class="nome">${contact.nome}</div>
-            <div class="telefone">${contact.telefone}</div>
-        </div>
-        <div class="cursoVen">
-            <div class="curso">${contact.curso}</div>
+            <div class="nome"><h1 id="nomeNome">${contact.nome}</h1></div>
             <div class="vendedora">Vendedora: ${contact.vendedora}</div>
         </div>
-        ${atendimentoFinalizado}
-        <div class="butoes">
-            <button class="btn-whatsapp" onclick="openWhatsapp('${contact.telefone}')"><img src="${whats}" alt="" /></button>
-            <button class="btn-delete" onclick="deleteContactFromAPI('${contact.telefone}')"><img src="${ok}" alt="" /></button>
+        <div class="cursoVen">
+            <div class="curso"><h1 id="cursoCurso">${contact.curso}<h1/></div>
+            <div class="butoes">
+                <button class="btn-whatsapp" onclick="openWhatsapp('${contact.telefone}')"><img src="${whats}" alt="" /></button>
+                <button class="btn-delete" onclick="deleteContactFromAPI('${contact.telefone}')"><img src="${ok}" alt="" /></button>
+            </div>
         </div>
+        ${atendimentoFinalizado}
     `;
     contatosList.prepend(li); // Adiciona no topo da lista
 }
@@ -69,7 +68,7 @@ async function deleteContactFromAPI(telefone) {
         if (li) {
             li.remove(); // Remove o contato visualmente
         }
-        alert('Contato excluído com sucesso!');
+        alert('Atendimento Realizado!');
     } catch (error) {
         console.error('Erro ao excluir contato:', error);
         alert('Erro ao excluir contato!');

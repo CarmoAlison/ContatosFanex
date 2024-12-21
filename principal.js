@@ -12,11 +12,11 @@ function renderContact(contact) {
     li.innerHTML = `
         <div class="logo"><img src="${LogoBranca}" alt="" /></div>
         <div class="nomeTel">
-            <div class="nome">${contact.nome}</div>
+            <div class="nome"><h1 id="nomeNome">${contact.nome}</h1></div>
             <div class="telefone">${contact.telefone}</div>
         </div>
         <div class="cursoVen">
-            <div class="curso">${contact.curso}</div>
+            <div class="curso"><h1 id="cursoCurso">${contact.curso}</h1></div>
             <div class="vendedora">Vendedora: ${contact.vendedora}</div>
         </div>
     `;

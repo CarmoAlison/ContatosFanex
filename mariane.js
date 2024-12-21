@@ -19,13 +19,15 @@ function renderContact(contact) {
         </div>
         <div class="cursoVen">
             <div class="curso">${contact.curso}</div>
+            <div class="vendBut">
             <div class="vendedora">Vendedora: ${contact.vendedora}</div>
+            <div class="butoes">
+                <button class="btn-whatsapp" onclick="openWhatsapp('${contact.telefone}')"><img src="${whats}" alt="" /></button>
+                <button class="btn-delete" onclick="deleteContactFromAPI('${contact.telefone}')"><img src="${ok}" alt="" /></button>
+            </div>
+            </div>
         </div>
         ${atendimentoFinalizado}  <!-- Exibe a mensagem se o atendimento foi finalizado -->
-        <div class="butoes">
-            <button class="btn-whatsapp" onclick="openWhatsapp('${contact.telefone}')"><img src="${whats}" alt="" /></button>
-            <button class="btn-delete" onclick="deleteContactFromAPI('${contact.telefone}')"><img src="${ok}" alt="" /></button>
-        </div>
     `;
     contatosList.appendChild(li);
 }

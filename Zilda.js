@@ -147,9 +147,9 @@ async function fetchContacts() {
         const contatos = await response.json();
         contatosList.innerHTML = ''; // Limpar a lista atual
 
-        // Filtrar e renderizar apenas os contatos com a vendedora "Miria"
-        contatos.filter(contact => contact.vendedora === 'Miria').forEach(contact => {
-            renderContact(contact); // Renderiza apenas os contatos de Miria
+        // Filtrar e renderizar apenas os contatos com a vendedora "Mariane"
+        contatos.filter(contact => contact.vendedora === 'Zilda').forEach(contact => {
+            renderContact(contact); // Renderiza apenas os contatos de Mariane
         });
     } catch (error) {
         console.error('Erro ao buscar contatos:', error);
